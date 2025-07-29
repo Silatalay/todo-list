@@ -1,0 +1,27 @@
+.input-container {
+  margin: 0 auto;    /* Center horizontally */
+  margin-bottom: 15px;
+  display: flex;              /* Add this */
+  justify-content: center;    /* Add this */
+  align-items: center;        /* Optional: vertical centering */
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #4c93af;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4595a0;
+}

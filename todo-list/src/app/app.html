@@ -1,3 +1,14 @@
-  <app-todo-item></app-todo-item>
-  <app-todo-input></app-todo-input>
- 
+<div class="main-container">
+  <app-todo-calendar 
+    [selectedDate]="selectedDate"
+    (dateChange)="onDateChange($event)">
+  </app-todo-calendar>
+  <app-todo-input 
+    [selectedDate]="selectedDate"
+    (taskAdded)="addTask($event)">
+  </app-todo-input>
+  <app-todo-item 
+    [tasks]="filteredTasks"
+    (taskDeleted)="deleteTask($event)">
+  </app-todo-item>
+</div>

@@ -1,1 +1,11 @@
-<p>todo-input works!</p>
+<div class="input-container">
+  <input 
+    type="text" 
+    placeholder="Yeni görev ekle..." 
+    [(ngModel)]="newTask"
+    (keyup.enter)="addTask()"
+    [disabled]="!selectedDate"
+  >
+  <button (click)="addTask()" [disabled]="!selectedDate">Ekle</button>
+</div>
+
